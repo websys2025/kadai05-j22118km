@@ -18,7 +18,7 @@
             // ここにコードを書く
             // zipcloudのAPI呼び出して結果を表示する
 
-            const zip = myForm.zipcode.value;
+            const zipcode = myForm.zipcode.value;
             const aRes = await fetch(`${endpoint}?zipcode=${zipcode}`);
             const obj = await aRes.json();
             const adr = obj.results[0];
